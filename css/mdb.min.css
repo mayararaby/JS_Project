@@ -19601,9 +19601,3 @@ input[type=range].no-border {
         margin-left: 0!important
     }
 }
-
-.fa-user:before,
-.fa-envelope:before,
-.fa-lock:before {
-    color: #d4788d !important;
-}

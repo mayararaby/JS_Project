@@ -1,0 +1,24 @@
+{
+    "firstUser": {
+        "userName": "Mayar",
+        "userEmail": "Mayararaby@gmail.com",
+        "userPassword": "123456789"
+    },
+    "secondUser": {
+        "userName": "philip",
+        "userEmail": "philip@gmail.com",
+        "userPassword": "123456789"
+
+    },
+    "thirdUser": {
+        "userName": "Mostafa",
+        "userEmail": "Mostafa@gmail.com",
+        "userPassword": "123456789"
+
+    },
+    "forthUser": {
+        "userName": "Mohammed",
+        "userEmail": "Mohammed@gmail.com",
+        "userPassword": "123456789"
+    }
+}

@@ -11,9 +11,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Bootstrap core CSS -->
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="../../css/mdb.min.css" rel="stylesheet">
+    <link href="../css/mdb.min.css" rel="stylesheet">
 
     <style>
         html,
@@ -97,6 +97,32 @@
         .md-form .form-control {
             color: #fff;
         }
+        
+        .backColor {
+            background: #4285f4;
+            color: #fff;
+        }
+        
+        button.btn.backColor.btn-lg:hover {
+            color: #fff;
+            background: #ff3547;
+        }
+        
+         ::placeholder {
+            color: #fff !important;
+            opacity: 1;
+            /* Firefox */
+        }
+        
+         :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #fff !important;
+        }
+        
+         ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #fff !important;
+        }
     </style>
 
 </head>
@@ -142,30 +168,28 @@
                                 <div class="card-body">
 
                                     <!--Header-->
-                                    <div class="form-header purple-gradient">
+                                    <div class="form-header backColor">
                                         <h3><i class="fas fa-user mt-2 mb-2"></i> Log in:</h3>
                                     </div>
 
                                     <!--Body-->
-                                    <div class="md-form">
-                                        <i class="fas fa-user prefix white-text"></i>
-                                        <input type="text" id="orangeForm-name" class="form-control">
-                                        <label for="orangeForm-name">Your name</label>
-                                    </div>
+
                                     <div class="md-form">
                                         <i class="fas fa-envelope prefix white-text"></i>
-                                        <input type="text" id="orangeForm-email" class="form-control">
-                                        <label for="orangeForm-email">Your email</label>
+                                        <input type="email" id="orangeForm-email" class="form-control" placeholder="Your email" required>
                                     </div>
 
                                     <div class="md-form">
                                         <i class="fas fa-lock prefix white-text"></i>
-                                        <input type="password" id="orangeForm-pass" class="form-control">
-                                        <label for="orangeForm-pass">Your password</label>
+                                        <input type="password" id="orangeForm-pass" class="form-control" placeholder="Your password" required>
                                     </div>
 
                                     <div class="text-center">
-                                        <button class="btn purple-gradient btn-lg">Sign up</button>
+                                        <button class="btn backColor btn-lg" onclick="signIn()">Sign in</button>
+                                        <br>
+                                        <span id="wrongMessage">
+
+                                        </span>
                                     </div>
 
                                 </div>
@@ -183,8 +207,9 @@
 
 
     <!--  SCRIPTS  -->
+    <script type="text/javascript" src="../js/signIn.js"></script>
     <!-- JQuery -->
-    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="../js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->

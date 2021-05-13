@@ -113,13 +113,13 @@
                     <strong>MDB</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
         </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="../homepage/homepage-v1.html">Home
-                              <span class="sr-only">(current)</span>
+                                <span class="sr-only">(current)</span>
                             </a>
                         </li>
                     </ul>
@@ -201,26 +201,29 @@
                                         <!--Grid column-->
                                         <div class="col-md-5">
                                             <!--/Grid row-->
+                                            <form>
+                                                <!--Body-->
+                                                <div class="md-form">
+                                                    <i class="fas fa-user prefix"></i>
+                                                    <input type="text" id="orangeForm-name" name="userName" class="form-control" placeholder="Your name" required>
+                                                </div>
+                                                <div class="md-form">
+                                                    <i class="fas fa-envelope prefix"></i>
+                                                    <input type="email" id="orangeForm-email" name="userEmail" class="form-control" placeholder="Your email" required>
+                                                </div>
 
-                                            <!--Body-->
-                                            <div class="md-form">
-                                                <i class="fas fa-user prefix"></i>
-                                                <input type="text" id="orangeForm-name" class="form-control" placeholder="Your name" required>
-                                            </div>
-                                            <div class="md-form">
-                                                <i class="fas fa-envelope prefix"></i>
-                                                <input type="email" id="orangeForm-email" class="form-control" placeholder="Your email" required>
-                                            </div>
+                                                <div class="md-form">
+                                                    <i class="fas fa-lock prefix"></i>
+                                                    <input type="password" id="orangeForm-pass" name="userPassword" placeholder="Your password" class="form-control" required>
+                                                </div>
 
-                                            <div class="md-form">
-                                                <i class="fas fa-lock prefix"></i>
-                                                <input type="password" id="orangeForm-pass" placeholder="Your password" class="form-control" required>
-                                            </div>
+                                                <div class="text-center">
+                                                    <button name="submit" class="btn btn-indigo btn-rounded mt-5">Sign up</button>
+                                                    <h3 id="errorEmail">
 
-                                            <div class="text-center">
-                                                <button class="btn btn-indigo btn-rounded mt-5">Sign up</button>
-                                            </div>
-
+                                                    </h3>
+                                                </div>
+                                            </form>
                                         </div>
                                         <!--Grid column-->
 
@@ -245,17 +248,21 @@
     <!--Main Navigation-->
 
     <!--  SCRIPTS  -->
+    <script type="text/javascript" src="../../js/signup.js"></script>
+
     <!-- JQuery -->
-    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../../js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    <script type="text/javascript" src="../../js/mdb.min.js"></script>
     <script>
         new WOW().init();
     </script>
+
 </body>
 
 </html>

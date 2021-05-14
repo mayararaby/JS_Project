@@ -1,1 +1,3 @@
-/* Your custom styles */
+div.card.card-ecommerce{
+    height: 370px !important;
+}

@@ -32,7 +32,7 @@
 
                     <a href="#">
 
-                        <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center">
+                        <img src="img/home-logo.webp" class="img-fluid flex-center">
 
                     </a>
 
@@ -114,7 +114,7 @@
 
                     <li>
 
-                        <a href="./cart.html" class="collapsible-header waves-effect arrow-r">
+                        <a href="cart.html" class="collapsible-header waves-effect arrow-r">
                             <i class="fas fa-shopping-cart"></i> Cart page
                         </a>
 
@@ -127,19 +127,10 @@
                     </li>
 
                     <li>
-                        <a href="./" class="collapsible-header waves-effect arrow-r">
+                        <a href="../" class="collapsible-header waves-effect arrow-r">
                             <i class="far fa-bookmark"></i> Homepage
                         </a>
                     </li>
-
-                    <li>
-
-                        <a href="./product.html" class="collapsible-header waves-effect arrow-r">
-                            <i class="fas fa-camera-retro"></i> Product page
-                        </a>
-
-                    </li>
-
                 </ul>
 
             </li>
@@ -208,13 +199,14 @@
 
                             <a class="nav-link dropdown-toggle waves-effect waves-light dark-grey-text font-weight-bold" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-                                <i class="fas fa-user blue-text"></i> Profile </a>
+                            </a>
 
                             <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
 
-                                <a class="dropdown-item waves-effect waves-light" href="#">My account</a>
 
-                                <a class="dropdown-item waves-effect waves-light" href="#">Log out</a>
+                                <a class="dropdown-item waves-effect waves-light" href="#" id="signOutOrSignIn"> </a>
+                                <a class="dropdown-item waves-effect waves-light" href="#" id="signUp"> </a>
+
 
                             </div>
 
@@ -253,19 +245,19 @@
 
                                 <div class="carousel-item active">
 
-                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/17.jpg" alt="First slide" class="img-fluid">
+                                    <img src="" id="prodcutimg" alt="First slide" class="img-fluid">
 
                                 </div>
 
                                 <div class="carousel-item">
 
-                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/18.jpg" alt="Second slide" class="img-fluid">
+                                    <img src="../img/Dell V-964i.jpg" id="prodcutimg" alt="Second slide" class="img-fluid">
 
                                 </div>
 
                                 <div class="carousel-item">
 
-                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/19.jpg" alt="Third slide" class="img-fluid">
+                                    <img src="../img/Dell V-964i.jpg" id="prodcutimg" alt="Third slide" class="img-fluid">
 
                                 </div>
 
@@ -295,11 +287,11 @@
 
                     </div>
 
-                    <div class="col-lg-5 mr-3 text-center text-md-left">
+                    <div class="col-lg-5 mr-3 text-center text-md-left " id>
 
                         <h2 class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4">
 
-                            <strong>Sony headphones</strong>
+                            <strong id="productName"></strong>
 
                         </h2>
 
@@ -351,7 +343,7 @@
                                 <!-- Card body -->
                                 <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
 
-                                    <div class="card-body">
+                                    <div class="card-body" id="Description">
 
                                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
                                         on it squid single-origin coffee nulla assumenda shoreditch et.
@@ -2127,6 +2119,8 @@
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
+    <script type="text/javascript" src="../js/checkSession.js"></script>
+
     <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
 
     <!-- Bootstrap tooltips -->
@@ -2137,28 +2131,31 @@
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../js/mdb.min.js"></script>
+    <!-- Product JavaScript -->
+    <script type="text/javascript" src="../js/product.js"></script>
 
-    <script type="text/javascript">
-        /* WOW.js init */
-        new WOW().init();
-        // SideNav Button Initialization
+    <!-- <script type="text/javascript">
+    /* WOW.js init */
+    new WOW().init();
+    // SideNav Button Initialization
 
-        $(".button-collapse").sideNav();
-        // SideNav Scrollbar Initialization
+    $(".button-collapse").sideNav();
+    // SideNav Scrollbar Initialization
 
-        var sideNavScrollbar = document.querySelector('.custom-scrollbar');
-        Ps.initialize(sideNavScrollbar);
-        // Tooltips Initialization
-        $(function() {
+    var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+    Ps.initialize(sideNavScrollbar);
+    // Tooltips Initialization
+    $(function () {
 
-            $('[data-toggle="tooltip"]').tooltip()
-        });
-        // Material Select Initialization
-        $(document).ready(function() {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+    // Material Select Initialization
+    $(document).ready(function () {
 
-            $('.mdb-select').material_select();
-        });
-    </script>
+      $('.mdb-select').material_select();
+    });
+
+  </script> -->
 
 </body>
 

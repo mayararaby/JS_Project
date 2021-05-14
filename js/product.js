@@ -23,9 +23,11 @@ xhttp.onreadystatechange = function() {
  //  console.log(obj[id].image)
 for(var i = 0 ; i < obj.length; i++){
   if(obj[i].id == id){
-    document.getElementById("productName").innerHTML=obj[id].productName;
-    document.getElementById("Description").innerHTML=obj[id].description
-    document.getElementById("prodcutimg").src=obj[id].image
+    document.getElementById("productName").innerHTML = obj[id].productName;
+    document.getElementById("Description").innerHTML = obj[id].description;
+    document.getElementById("prodcutimg").src = obj[id].image;
+    document.getElementById("prodcutimg2").src = obj[id].image;
+    document.getElementById("prodcutimg3").src = obj[id].image;
     break;
   }
   

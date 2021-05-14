@@ -15,7 +15,7 @@ function loadJSON(name, ...url) {
     xhr.send();
   }
 }
-if (usp[0].split("=")[0] == "category") {
+if (usp[0].split("=")[0] == "category" || !usp[0].split("=")[0]) {
   let category = usp[0].split("=")[1];
   if (categories.includes(category)) {
     xhr.open("GET", `../json/${category}.json`);

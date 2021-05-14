@@ -322,7 +322,7 @@
 
                     <li class="nav-item dropdown mega-dropdown">
 
-                        <a class="nav-link dropdown-toggle no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cameras</a>
+                        <!-- <a class="nav-link dropdown-toggle no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cameras</a> -->
 
                         <div class="dropdown-menu mega-menu v-2 row z-depth-1 white" aria-labelledby="navbarDropdownMenuLink1">
 
@@ -397,7 +397,7 @@
 
                     <li class="nav-item dropdown mega-dropdown">
 
-                        <a class="nav-link dropdown-toggle no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accesories</a>
+                        <!-- <a class="nav-link dropdown-toggle no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accesories</a> -->
 
                         <div class="dropdown-menu mega-menu v-2 row z-depth-1 white" aria-labelledby="navbarDropdownMenuLink1">
 
@@ -505,11 +505,11 @@
 
                 <!-- Links -->
                 <!-- Search form -->
-                <form class="search-form" role="search">
+                <form class="search-form" role="search" id="search-form">
 
                     <div class="form-group md-form my-0 waves-light">
 
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" class="form-control" placeholder="Search" id="search">
 
                     </div>
 
@@ -560,7 +560,7 @@
                                 <!-- Radio group -->
                                 <div class="form-group ">
 
-                                    <input class="form-check-input" name="group100" type="radio" id="radio100">
+                                    <input class="form-check-input" name="category" type="radio" id="radio100" value="all" checked>
 
                                     <label for="radio100" class="form-check-label dark-grey-text">All</label>
 
@@ -568,7 +568,7 @@
 
                                 <div class="form-group">
 
-                                    <input class="form-check-input" name="group100" type="radio" id="radio101" checked>
+                                    <input class="form-check-input" name="category" type="radio" id="radio101" value="laptops">
 
                                     <label for="radio101" class="form-check-label dark-grey-text">Laptop</label>
 
@@ -576,7 +576,7 @@
 
                                 <div class="form-group">
 
-                                    <input class="form-check-input" name="group100" type="radio" id="radio102">
+                                    <input class="form-check-input" name="category" type="radio" id="radio102" value="mobiles">
 
                                     <label for="radio102" class="form-check-label dark-grey-text">Smartphone</label>
 
@@ -584,19 +584,19 @@
 
                                 <div class="form-group">
 
-                                    <input class="form-check-input" name="group100" type="radio" id="radio103">
+                                    <input class="form-check-input" name="category" type="radio" id="radio103" value="mobiles">
 
                                     <label for="radio103" class="form-check-label dark-grey-text">Tablet</label>
 
                                 </div>
 
-                                <div class="form-group">
+                                <!-- <div class="form-group">
 
-                                    <input class="form-check-input" name="group100" type="radio" id="radio104">
+                                    <input class="form-check-input" name="category" type="radio" id="radio104">
 
                                     <label for="radio104" class="form-check-label dark-grey-text">Headphones</label>
 
-                                </div>
+                                </div> -->
 
                                 <!-- Radio group -->
                         </div>
@@ -952,7 +952,12 @@
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../js/mdb.min.js"></script>
+    <!-- Category JavaScript -->
     <script type="text/javascript" src="../js/category.js"></script>
+      <!-- Search JavaScript -->
+    <script type="text/javascript" src="../js/search.js"></script>
+    <!-- Filter JavaScript -->
+    <script type="text/javascript" src="../js/filter.js"></script>
 
     <script type="text/javascript">
         /* WOW.js init */

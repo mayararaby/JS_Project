@@ -58,7 +58,7 @@ function getAllProducts () {
           <div class="row mb-0">
             <span class="float-left"><strong>${data[i].price}</strong></span>
             <span class="float-right">
-              <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-id="${data[i].id}" data-category="${data[i].category}"><i
+              <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-id="${data[i].id}" data-category="${data[i].category}" data-name="${data[i].productName}" data-img="${data[i].image}" data-price="${data[i].price}"><i
                   class="fas fa-shopping-cart ml-3"></i></a>
             </span>
           </div>
@@ -70,6 +70,7 @@ function getAllProducts () {
   </div>
     `
   }
+  localStorage.setItem("productsJSON", JSON.stringify(data));
 }
 function getCategory(category) {
   loadJSON("json", category);
@@ -106,7 +107,7 @@ function getCategory(category) {
             <div class="row mb-0">
               <span class="float-left"><strong>${json[i].price}</strong></span>
               <span class="float-right">
-                <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-id="${json[i].id}" data-category="${json[i].category}"><i
+                <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-id="${json[i].id}" data-category="${json[i].category}" data-name="${json[i].productName}" data-img="${json[i].image}" data-price="${json[i].price}"><i
                     class="fas fa-shopping-cart ml-3"></i></a>
               </span>
             </div>
@@ -118,6 +119,7 @@ function getCategory(category) {
     </div>
   `;
   }
+  localStorage.setItem("productsJSON", JSON.stringify(json));
 }
 if (usp[0].split("=")[0] == "category" || !usp[0].split("=")[0]) {
   let category = usp[0].split("=")[1];
@@ -183,7 +185,7 @@ if (usp[0].split("=")[0] == "category" || !usp[0].split("=")[0]) {
                       <div class="row mb-0">
                         <span class="float-left"><strong>${json[i].price}</strong></span>
                         <span class="float-right">
-                          <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart"><i
+                          <a class="" data-toggle="tooltip" data-placement="top" title="Add to Cart" data-id="${json[i].id}" data-category="${json[i].category}" data-name="${json[i].productName}" data-img="${json[i].image}" data-price="${json[i].price}"><i
                               class="fas fa-shopping-cart ml-3"></i></a>
                         </span>
                       </div>
@@ -197,6 +199,7 @@ if (usp[0].split("=")[0] == "category" || !usp[0].split("=")[0]) {
           }
         }
       }
+      localStorage.setItem("productsJSON", JSON.stringify(json));
       if (flag)
         getAllProducts();
     }

@@ -1,5 +1,7 @@
 var r = window.location.search;
 var arr = [];
+var objLocal={};
+var flag=true;
 var usp = new URLSearchParams(r).toString().split("&");
     
     // console.log(usp)
@@ -28,6 +30,15 @@ for(var i = 0 ; i < obj.length; i++){
     document.getElementById("prodcutimg").src = obj[id].image;
     document.getElementById("prodcutimg2").src = obj[id].image;
     document.getElementById("prodcutimg3").src = obj[id].image;
+    objLocal.name=obj[id].productName;
+    objLocal.img=obj[id].image;
+    objLocal.price=obj[id].price;
+    objLocal.quantity=1;
+    objLocal.id=obj[id].id;
+    objLocal.category=obj[id].category;
+    
+
+
     break;
   }
   
@@ -37,7 +48,22 @@ for(var i = 0 ; i < obj.length; i++){
   }
 
 xhttp.send();
-
+function fillloacl()
+{
+  if(flag)
+  {
+  var arr = localStorage.getItem('cart');
+  if (arr && arr.length) {
+    let myArray = JSON.parse(arr);
+    myArray.push(objLocal);
+    myArray = JSON.stringify(myArray);
+    localStorage.setItem("cart", myArray);
+  }
+}
+flag=false;
+   
+}
+document.getElementById("addCart").addEventListener('click',fillloacl);
   
  
       

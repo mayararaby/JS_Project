@@ -70,6 +70,7 @@ function getAllProducts () {
   </div>
     `
   }
+  localStorage.setItem("productsJSON", JSON.stringify(data));
 }
 function getCategory(category) {
   loadJSON("json", category);
@@ -118,6 +119,7 @@ function getCategory(category) {
     </div>
   `;
   }
+  localStorage.setItem("productsJSON", JSON.stringify(json));
 }
 if (usp[0].split("=")[0] == "category" || !usp[0].split("=")[0]) {
   let category = usp[0].split("=")[1];
@@ -197,6 +199,7 @@ if (usp[0].split("=")[0] == "category" || !usp[0].split("=")[0]) {
           }
         }
       }
+      localStorage.setItem("productsJSON", JSON.stringify(json));
       if (flag)
         getAllProducts();
     }

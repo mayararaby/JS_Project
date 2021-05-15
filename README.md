@@ -5,7 +5,7 @@ You can check the live game from [here](https://homeclick.netlify.app/)
 
 ## contributers
 
-(ITI) Team B in Software Web Fundamentals:
+(ITI) Frontend & Cross-platform mobile development :
 * [Philib](https://github.com/Ph-F-Hana)
 * [Mostafa](https://github.com/Mostafalotfy1)
 * [Mohammed](https://github.com/bassamnegm)

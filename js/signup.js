@@ -7,16 +7,16 @@ function signUp() {
         document.getElementById("errorPassword").innerHTML = " ";
         document.getElementById("errorName").innerHTML = "<div class='alert alert-danger' role='alert'>Please enter valid name with valid syntax</div>";
 
-    } else if (userPassword.length < 5) {
-        document.getElementById("errorName").innerHTML = " ";
-        document.getElementById("errorEmail").innerHTML = " ";
-        document.getElementById("errorPassword").innerHTML = "<div class='alert alert-danger' role='alert'>Your password is weak please choose another one more than 5 characters or numbers or symbol</div>";
     } else if (!(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(userEmail))) {
         localStorage.setItem("userName", userName);
         document.getElementById("errorPassword").innerHTML = " ";
 
         document.getElementById("errorEmail").innerHTML = "<div class='alert alert-danger' role='alert'>Invalid email syntax</div>";
 
+    } else if (userPassword.length < 5) {
+        document.getElementById("errorName").innerHTML = " ";
+        document.getElementById("errorEmail").innerHTML = " ";
+        document.getElementById("errorPassword").innerHTML = "<div class='alert alert-danger' role='alert'>Your password is weak please choose another one more than 5 characters or numbers or symbol</div>";
     } else {
         localStorage.setItem("userName", userName);
         localStorage.setItem("userEmail", userEmail);

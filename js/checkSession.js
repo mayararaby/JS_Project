@@ -1,10 +1,21 @@
 let userName = localStorage.getItem("userName");
+let url = location.pathname;
+
 if (userName == null) {
+
     document.getElementById("navbarDropdownMenuLink-4").innerHTML = "<i class='fas fa-user blue-text'></i> New User "
     document.getElementById("signOutOrSignIn").innerHTML = "<i class='fas fa-sign-in-alt'></i> \xa0\xa0Sign In";
+    if (url == "/") {
+        document.getElementById("signOutOrSignIn").href = "html/login-page.html";
+        document.getElementById("signUp").href = "html/signup-page.html";
+    } else {
+        document.getElementById("signOutOrSignIn").href = "../html/login-page.html";
+        document.getElementById("signUp").href = "../html/signup-page.html";
+    }
+    // document.getElementById("signUp").href = "../html/signup-page.html";
     document.getElementById("signOutOrSignIn").href = "../html/login-page.html";
     document.getElementById("signUp").innerHTML = "<i class='fas fa-user-plus'></i>\xa0\xa0 Sign Up "
-    document.getElementById("signUp").href = "../html/signup-page.html";
+        // document.getElementById("signUp").href = "../html/signup-page.html";
 } else {
     document.getElementById("navbarDropdownMenuLink-4").innerHTML = "<i class='fas fa-user blue-text'></i> welcome " + userName;
     document.getElementById("signOutOrSignIn").innerHTML = "<i class='fas fa-sign-out-alt'></i> \xa0\xa0Sign out";

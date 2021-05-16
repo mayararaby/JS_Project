@@ -1,13 +1,14 @@
-
+if (location.href.includes("cart")) {
+  if (localStorage.getItem("userEmail") == undefined) {
+    document.location.assign(("login-page.html"));
+  }
+}
 document.body.addEventListener('click', event => {
   let element = event.target.parentElement;
   let obj = {};
   let json = [];
   let quantity = event.target.parentElement.parentElement.firstElementChild;
   let flag=false;
-  if (localStorage.getItem("userEmail") == undefined) {
-    document.location.assign(("login-page.html"));
-  }
   if (element.dataset.id && element.dataset.category) {
     var arr = localStorage.getItem('cart');
     if (arr && arr.length) {

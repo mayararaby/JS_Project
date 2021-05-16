@@ -12,3 +12,7 @@ You can check the live game from [here](https://homeclick.netlify.app/)
 * [Mayar](https://github.com/mayararaby)
 
 
+## Demo
+
+![demo](https://github.com/mayararaby/JS_Project/blob/main/Demo.gif)
+

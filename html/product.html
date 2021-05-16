@@ -2113,8 +2113,8 @@
     </script>
     <script>
         function checkUser() {
-            let userName = localStorage.getItem("userName");
-            if (userName == null)
+            let userToken = localStorage.getItem("userToken");
+            if (userToken == null)
                 document.location.assign("login-page.html")
             else
                 document.location.assign("cart.html")

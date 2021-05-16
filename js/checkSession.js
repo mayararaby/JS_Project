@@ -1,5 +1,4 @@
 let userName = localStorage.getItem("userName");
-let url = location.pathname;
 
 if (userName == null) {
 

@@ -10,7 +10,7 @@ function signUp() {
     } else if (!(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(userEmail))) {
         localStorage.setItem("userName", userName);
         document.getElementById("errorPassword").innerHTML = " ";
-
+        document.getElementById("errorName").innerHTML = " ";
         document.getElementById("errorEmail").innerHTML = "<div class='alert alert-danger' role='alert'>Invalid email syntax</div>";
 
     } else if (userPassword.length < 5) {

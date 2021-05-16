@@ -1,6 +1,6 @@
-let userName = localStorage.getItem("userName");
+let userToken = localStorage.getItem("userToken");
 
-if (userName == null) {
+if (userToken == null) {
 
     document.getElementById("navbarDropdownMenuLink-4").innerHTML = "<i class='fas fa-user blue-text'></i> New User "
     document.getElementById("signOutOrSignIn").innerHTML = "<i class='fas fa-sign-in-alt'></i> \xa0\xa0Sign In";
@@ -21,7 +21,7 @@ if (userName == null) {
     document.getElementById("signUp").setAttribute("style", "display: none;");
     let signOut = document.getElementById("signOutOrSignIn");
     signOut.onclick = function() {
-        localStorage.clear();
+        localStorage.removeItem('userToken');
         location.reload();
     }
 }
